@@ -13,11 +13,11 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET(POPULAR_MOVIES_ENDPOINT)
-    suspend fun getPopularMovies(@Query("page") page: Int): Single<MovieResultRemote>
+    fun getPopularMovies(@Query("page") page: Int): Single<MovieResultRemote>
 
     @GET(MOVIE_DETAILS_ENDPOINT)
-    suspend fun getMovieDetails(@Path("movie_id") movieId: Long): Single<MovieDetailsRemote>
+    fun getMovieDetails(@Path("movie_id") movieId: Long): Single<MovieDetailsRemote>
 
     @GET(SIMILAR_MOVIES_ENDPOINT)
-    suspend fun getSimilarMovies(@Path("movie_id") movieId: Long): Single<MovieResultRemote>
+    fun getSimilarMovies(@Path("movie_id") movieId: Long): Single<MovieResultRemote>
 }
