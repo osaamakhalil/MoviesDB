@@ -90,4 +90,7 @@ dependencies {
     // RxJava for room
     implementation "androidx.room:room-rxjava3:2.4.3"
 
+    //Timber
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
 }
