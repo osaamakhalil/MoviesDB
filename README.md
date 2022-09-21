@@ -34,7 +34,7 @@
 - Add movie to favorite and it store in local database 
 - See a list of favorites
 - See count of favorites
-- Remove items from favorite
+- Remove items from favorites
 
 
 # MVVM Architecture 
