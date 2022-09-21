@@ -5,10 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.moviesdb.local.dao.MoviesDAO
-import com.example.moviesdb.local.model.Movie
+import com.example.moviesdb.local.model.MovieLocal
 
 @Database(
-    entities = [Movie::class],
+    entities = [MovieLocal::class],
     version = 1,
     exportSchema = false
 )
