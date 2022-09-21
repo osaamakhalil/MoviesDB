@@ -18,7 +18,8 @@ class MovieDetailsEntityMapper @Inject constructor() {
             releaseDate = input.releaseDate!!,
             revenue = input.revenue!!,
             status = input.status!!,
-            tagline = input.tagline!!
+            tagline = input.tagline!!,
+            poster = input.poster!!
         )
     }
 
@@ -47,6 +48,8 @@ class MovieDetailsEntityMapper @Inject constructor() {
         if (remote.tagline == null) {
             throw Exception("Can't find remote.tagline in $remote")
         }
-
+        if (remote.poster == null) {
+            throw Exception("Can't find remote.poster in $remote")
+        }
     }
 }

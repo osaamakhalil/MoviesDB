@@ -10,5 +10,6 @@ data class MovieDetailsRemote (
     @SerializedName("release_date") val releaseDate: String?,
     @SerializedName("revenue") val revenue: Int?,
     @SerializedName("status") val status: String?,
-    @SerializedName("tagline") val tagline: String?
+    @SerializedName("tagline") val tagline: String?,
+    @SerializedName("poster_path") val poster: String?
 )

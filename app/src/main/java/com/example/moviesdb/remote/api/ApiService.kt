@@ -17,7 +17,4 @@ interface ApiService {
 
     @GET(MOVIE_DETAILS_ENDPOINT)
     fun getMovieDetails(@Path("movie_id") movieId: Long): Single<MovieDetailsRemote>
-
-    @GET(SIMILAR_MOVIES_ENDPOINT)
-    fun getSimilarMovies(@Path("movie_id") movieId: Long): Single<MovieResultRemote>
 }
