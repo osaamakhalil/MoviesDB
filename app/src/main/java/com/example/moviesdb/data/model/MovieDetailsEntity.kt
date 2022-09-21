@@ -8,5 +8,6 @@ data class MovieDetailsEntity(
     val releaseDate: String,
     val revenue: Int,
     val status: String,
-    val tagline: String
+    val tagline: String,
+    val poster: String
 )
