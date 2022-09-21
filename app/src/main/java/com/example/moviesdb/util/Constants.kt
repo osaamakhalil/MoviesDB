@@ -13,4 +13,8 @@ object Constants {
     const val SIMILAR_MOVIES_ENDPOINT = "movie/{movie_id}/similar?api_key=$API_KEY"
 
     const val MOVIES_TABLE_NAME = "movies"
+
+    const val BASE_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
+
+    const val PAGINATION_START = 1
 }

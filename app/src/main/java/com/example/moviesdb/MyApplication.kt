@@ -3,6 +3,7 @@ package com.example.moviesdb
 import android.app.Application
 import com.example.moviesdb.di.components.AppComponent
 import com.example.moviesdb.di.components.DaggerAppComponent
+import timber.log.Timber
 
 
 class MyApplication : Application() {
@@ -14,6 +15,7 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         provideAppComponent().inject(this)
+        Timber.plant(Timber.DebugTree())
     }
 
     fun provideAppComponent() = appComponent
